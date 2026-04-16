@@ -39,7 +39,7 @@
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
   html { scroll-behavior: smooth; }
   body {
-    padding-bottom: 72px;
+    padding-bottom: 68px;
     font-family: 'Jost', sans-serif;
     color: var(--text);
     background: var(--parchment);
@@ -542,9 +542,11 @@
 
   /* ── FOOTER ── */
   footer { position: fixed; bottom: 0; left: 0; right: 0; z-index: 100;
-    background: #0e0b07; padding: 18px 5vw;
+    background: #0e0b07; padding: 0 5vw;
+    height: 68px; box-sizing: border-box;
     display: flex; align-items: center; justify-content: space-between; flex-wrap: nowrap; gap: 16px;
     border-top: 1px solid rgba(192,136,50,0.1);
+    overflow: hidden;
   }
   .footer-brand { display: flex; align-items: center; gap: 10px; text-decoration: none; }
   .footer-brand-text {
